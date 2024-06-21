@@ -1,0 +1,249 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/*Style untuk header*/
+.wraper {
+  margin: 20px 20px 20px 20px;
+}
+
+/*Style untuk header*/
+.previewimg {
+  background-color: rgb(228, 210, 156);
+  text-align: center;
+  color: black;
+  height: auto;
+}
+
+body {
+  background-image: url('img_girl.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.header {
+  /* background-color: rgb(210, 133, 18); */
+  background-color: grey;
+  color: #292020;
+  height: 50px;
+  vertical-align: middle;
+  margin: 0px 0px 0px 0px;
+}
+
+.menu_kiri {
+  float: left;
+  margin: 0px;
+  padding: 10px;
+  width: 100%;
+}
+
+.menu_kiri li {
+  padding: 10px;
+  height: auto;
+  list-style-type: none;
+  float: left;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #ffffff;
+  width: auto;
+  text-align: center;
+}
+
+.menu_kiri li a {
+  text-decoration: none;
+}
+
+.menu_kiri li a:hover {
+  font-weight: bold;
+  color: rgb(184, 147, 142);
+  text-shadow: 0px 0px 2px #000;
+}
+
+.menu_kiri li:hover {
+  background-color: #ffffff;
+}
+
+
+/*Style untuk konten*/
+.konten {
+  padding: 0;
+  background-color: #f1f1f1;
+}
+
+
+.daftarbuku {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding-left: 500px;
+  height: 500px;
+  width: 1000px;
+  margin: auto;
+  margin-bottom: 450px;
+}
+.card {
+/* Add shadows to create the "card" effect */
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+transition: 0.3s;
+width: 200px;
+border-radius: 5px;
+margin-left: 20px;
+height: 250px;
+backdrop-filter: blur(30px);
+box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+border: 2px solid rgba(255, 255, 255, 0.18);
+color: azure;
+/* max-height: 300px; */
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+transform: scale(1.1);
+}
+
+/* Add some padding inside the card container */
+.card-container {
+padding-bottom: 2px;
+text-align: center;
+width: 200px;
+height: 80px;
+backdrop-filter: blur(30px);
+box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+border: 2px solid rgba(255, 255, 255, 0.18);
+color: azure;
+}
+
+img {
+  width: 100%;
+  border-top-left-radius:5px;
+  border-top-right-radius: 5px;
+}
+
+input[type=text] {
+  width: 130px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+  width: 100%;
+}
+
+.register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.myInput {
+  background-image: url('searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myTable {
+  border-collapse: collapse; /* Collapse borders */
+  width: 100%; /* Full-width */
+  border: 1px solid #ddd; /* Add a grey border */
+  font-size: 18px; /* Increase font-size */
+}
+
+#myTable th, #myTable td {
+  text-align: left; /* Left-align text */
+  padding: 12px; /* Add padding */
+}
+
+#myTable tr {
+  /* Add a bottom border to all table rows */
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.headerTable, #myTable tr:hover {
+  /* Add a grey background color to the table header and on hover */
+  background-color: #f1f1f1;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.login-box {
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+form {
+  width: 300px; /* Sesuaikan lebar form dengan kebutuhan */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/*Style untuk footer*/
+
+.footer {
+  position: fixed;
+  clear: both;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(210, 133, 18);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  /* height: 100px; */
+}
+
+.book-detail {
+  display: block;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
